@@ -200,3 +200,7 @@ docker run -d \
 ## 反馈与贡献 🤝
 
 若使用中遇到问题或有功能建议，欢迎提交 Issue。后端代码与被控端代码开源部分接受合理 PR，共同完善项目。
+
+## 官网/支持我们
+官网https://xcdream.com/ym
+购买云服务（CDN/服务器/游戏云/物理机）https://re.xcdream.com/links/qiafan
