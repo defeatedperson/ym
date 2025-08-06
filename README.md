@@ -80,6 +80,7 @@
     *   用于任何违反法律法规或行业规范的业务场景
 
 ## 安装部署（Docker 容器化） 🐳
+[![通过雨云一键部署](https://rainyun-apps.cn-nb1.rains3.com/materials/deploy-on-rainyun-cn.svg)](https://app.rainyun.com/apps/rca/store/6871/dp712_)
 
 ### 首次部署 🚀
 
