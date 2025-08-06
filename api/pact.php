@@ -14,7 +14,7 @@
         <div class="pact-section">
             <h2>一、基本许可</h2>
             <ol>
-                <li>本软件仅 <strong>后端 PHP</strong> 代码开源，前端 Vue 代码暂不开放，整体基于 <strong>Apache 2.0 协议</strong> 开源。</li>
+                <li>本软件仅 <strong>后端 PHP/Go </strong> 代码开源，前端 Vue 代码暂不开放，整体基于 <strong>Apache 2.0 协议</strong> 开源。</li>
                 <li>允许个人和企业用户免费下载、安装及使用本软件。</li>
                 <li>离线使用：软件支持完全离线运行，无需与官方服务器通信即可使用核心功能。</li>
             </ol>
@@ -57,7 +57,7 @@
             <p>开发者有权随时修改本协议，更新后继续使用即视为同意新条款。</p>
         </div>
         <div class="license-section">
-            <p>本软件后端 PHP 代码基于 <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" class="apache-link">Apache 2.0 协议</a> 开源，前端 Vue 代码暂不开放。</p>
+            <p>本软件后端 PHP/Go 代码基于 <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" class="apache-link">Apache 2.0 协议</a> 开源，前端 Vue 代码暂不开放。</p>
         </div>
         <div class="pact-footer">
             <div>云阶段星幕工作室</div>
@@ -65,4 +65,5 @@
         </div>
     </div>
 </body>
+
 </html>
