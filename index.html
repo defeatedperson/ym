@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="site-title">YM云幕监控</title>
+    <meta
+      name="keywords"
+      id="site-keywords"
+      content="多服务器监控，负载监控程序，服务器负载管理，实时监控系统，云幕监控"
+    />
+    <meta
+      name="description"
+      id="site-description"
+      content="云幕监控是一款多服务器监控、负载监控程序、服务器负载管理、实时监控系统，用于监控多台服务器的负载情况，及时发现问题，提高服务器的运行效率。"
+    />
+    <script type="module" crossorigin src="/assets/index-3rvIzVhp.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bmz-fn_d.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      // 动态加载站点信息
+      ;(function () {
+        fetch('/api/data/site.json')
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok')
+            }
+            return response.json()
+          })
+          .then((data) => {
+            // 更新标题
+            if (data.siteName) {
+              document.getElementById('site-title').textContent = data.siteName
+            }
+
+            // 更新关键词
+            if (data.keywords) {
+              document.getElementById('site-keywords').setAttribute('content', data.keywords)
+            }
+
+            // 更新描述
+            if (data.description) {
+              document.getElementById('site-description').setAttribute('content', data.description)
+            }
+          })
+          .catch((error) => {
+            console.error('Failed to load site information:', error)
+            // 如果加载失败，保持默认标题
+          })
+      })()
+    </script>
+  </body>
+</html>
