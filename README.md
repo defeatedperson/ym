@@ -82,6 +82,7 @@
 ## 安装部署（Docker 容器化） 🐳
 
 文档地址https://re.xcdream.com/9405.html
+
 [![通过雨云一键部署](https://rainyun-apps.cn-nb1.rains3.com/materials/deploy-on-rainyun-cn.svg)](https://app.rainyun.com/apps/rca/store/6871/dp712_)
 
 ### 首次部署 🚀
