@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 	"os"
 	"strings"
@@ -21,7 +20,7 @@ func getSystemInfo() {
 	// 获取CPU信息
 	cpuInfo, err := getCpuInfo()
 	if err != nil {
-		log.Printf("获取CPU信息失败: %v", err)
+		// 静默处理错误
 	} else {
 		fmt.Printf("CPU型号: %s\n", cpuInfo.ModelName)
 		fmt.Printf("CPU核心数: %d\n", cpuInfo.Cores)
@@ -30,7 +29,7 @@ func getSystemInfo() {
 	// 获取内存信息
 	memInfo, err := getMemoryInfo()
 	if err != nil {
-		log.Printf("获取内存信息失败: %v", err)
+		// 静默处理错误
 	} else {
 		fmt.Printf("总内存大小: %.2f GB\n", memInfo.TotalGB)
 	}
@@ -38,7 +37,7 @@ func getSystemInfo() {
 	// 获取磁盘信息
 	diskInfo, err := getDiskInfo()
 	if err != nil {
-		log.Printf("获取磁盘信息失败: %v", err)
+		// 静默处理错误
 	} else {
 		fmt.Printf("总磁盘大小: %.2f GB\n", diskInfo.TotalGB)
 	}
@@ -297,26 +296,22 @@ func sendData(config Config) {
 	// 获取系统信息
 	cpuInfo, err := getCpuInfo()
 	if err != nil {
-		log.Printf("获取CPU信息失败: %v", err)
 		return
 	}
 	
 	memInfo, err := getMemoryInfo()
 	if err != nil {
-		log.Printf("获取内存信息失败: %v", err)
 		return
 	}
 	
 	diskInfo, err := getDiskInfo()
 	if err != nil {
-		log.Printf("获取磁盘信息失败: %v", err)
 		return
 	}
 	
 	// 获取系统使用情况
 	usage, err := getSystemUsage()
 	if err != nil {
-		log.Printf("获取系统使用情况失败: %v", err)
 		return
 	}
 	
@@ -349,17 +344,13 @@ func sendData(config Config) {
 	for i := 0; i < 3; i++ { // 初始尝试 + 2次重试
 		err := sendRequest(config.MasterAddress, nodeData)
 		if err == nil {
-			log.Printf("数据发送成功")
 			return
 		}
 		
-		log.Printf("数据发送失败 (尝试 %d/3): %v", i+1, err)
 		if i < 2 { // 不是最后一次尝试，等待5秒后重试
 			time.Sleep(5 * time.Second)
 		}
 	}
-	
-	log.Printf("数据发送失败，已达到最大重试次数")
 }
 
 // sendRequest 发送HTTP请求
@@ -400,7 +391,7 @@ func main() {
 	// 加载配置文件
 	config, err := loadConfig()
 	if err != nil {
-		log.Fatalf("加载配置文件失败: %v", err)
+		return
 	}
 	
 	// 启动监控
