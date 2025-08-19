@@ -152,7 +152,12 @@ docker rm ym-cloud-transfer
 
 
 
-1.  拉取最新镜像：
+1.  拉取最新镜像（先删除，再拉取）：
+
+
+```
+docker rmi defeatedperson/ym-app:latest
+```
 
 
 
