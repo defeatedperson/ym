@@ -19,8 +19,8 @@
 *   **轻量高效**：被控端资源占用低，主控端界面简洁，操作门槛低。
 
 ## 页面展示
-[![](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/1.webp)](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/1.webp)
-[![](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/2.webp)](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/2.webp)
+[![](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/1.webp)](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/11.webp)
+[![](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/2.webp)](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/22.webp)
 [![](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/3.webp)](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/3.webp)
 [![](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/4.webp)](https://raw.githubusercontent.com/defeatedperson/ym/refs/heads/main/photo/4.webp)
 
